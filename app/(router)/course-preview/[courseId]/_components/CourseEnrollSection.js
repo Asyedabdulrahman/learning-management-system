@@ -19,15 +19,17 @@ function CourseEnrollSection({ courseInfo, isUserAlreadyEnrolled }) {
       courseInfo?.slug,
       user?.primaryEmailAddress?.emailAddress
     ).then((resp) => {
-      console.log(resp);
       if (resp) {
         //show toast on successfull Enroll
-        toast("User enrolled Successfully", {
-          description: "success",
-        });
+        // toast("User enrolled Successfully", {
+        //   description: "success",
+        // });
 
+         if (!user) {
+          router.push("/watch-course/" + resp.createUserEnrollCourse.id);
+        }
         //Redirect to Watch course
-        router.push("/watch-course/" + resp.createUserEnrollCourse.id);
+       
       }
     });
   };
