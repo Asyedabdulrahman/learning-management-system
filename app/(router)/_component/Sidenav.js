@@ -64,7 +64,7 @@ function Sidenav() {
   const path = usePathname();
   return (
     <div className="p-7 bg-white shadow-sm border h-screen">
-      <Image alt="image" src="/logo.svg" width={170} height={80} />
+      <Image alt="image" src="/logos.png" width={170} height={80} />
       <hr className="mt-7" />
       {/* menu list */}
       <div className="mt-5">
