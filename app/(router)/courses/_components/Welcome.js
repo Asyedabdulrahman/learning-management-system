@@ -4,7 +4,7 @@ import Image from "next/image";
 const Welcomebanner = () => {
   return (
     <div className="flex gap-5 items-center bg-white rounded-xl p-5">
-      <Image src="/next.svg" alt="logo image" width={100} height={100} />
+      <Image src="/chapter.png" alt="logo image" width={100} height={100} />
       <div>
         <h2 className="font-bold text-[27px]">
           Welcome to <span className="text-primary pr-1">Online Learning</span>
